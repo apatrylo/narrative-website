@@ -17,6 +17,19 @@
 
 /* Map 
 ------------------------- */
+
+/* CSS for Medium breakpoint and larger screens */
+@media (min-width: 768px) {
+  .order-md-2 {
+      order: 2;
+  }
+  .order-md-1 {
+      order: 1;
+  }
+  .text-center {
+      text-align: center;
+  }
+}
 /* Custom CSS for Map Section */
 
 .map-responsive {
@@ -3112,7 +3125,7 @@ textarea.form-control-lg {
   color: #000;
   box-shadow: 0 5px 15px #7D9672;
   background-color: #F1F2EF;
-  border-color: #7D9672;
+  /* border-color: #7D9672; */
 }
 
 .btn-light:active{
@@ -3126,7 +3139,7 @@ textarea.form-control-lg {
 .btn-check:checked + .btn-light, .btn-check:active + .btn-light, .btn-light:active, .btn-light.active, .show > .btn-light.dropdown-toggle {
   color: #D8D5CF;
   background-color: #F1F2EF !important;
-  border-color: #7D9672 !important;
+  /* border-color: #7D9672 !important; */
 }
 
 .btn-light:disabled, .btn-light.disabled {
