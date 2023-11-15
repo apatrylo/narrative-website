@@ -11,12 +11,20 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+/* Read more */
 
+.more-content {
+  display: none;
+}
 
+/* Styling for the "Read more" link */
+.read-more {
+  color: blue;
+  cursor: pointer;
+}
 
+/* Read more END */
 
-/* Map 
-------------------------- */
 
 /* CSS for Medium breakpoint and larger screens */
 @media (min-width: 768px) {
@@ -3115,7 +3123,7 @@ textarea.form-control-lg {
   border-color: #D8D5CF;
 }
 .btn-light:hover {
-  width: ;
+  width: auto ;
   color: #F1F2EF;
   background-color: #7D9672;
   border-color: #7D9672;

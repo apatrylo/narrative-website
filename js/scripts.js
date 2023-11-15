@@ -7,6 +7,50 @@
 // Scripts
 // 
 
+
+//Read more script
+
+
+
+
+// JavaScript function for "Read more/less" functionality
+const toggleReadMore = (btn, content) => {
+    const moreText = content.querySelector('.more');
+    if (moreText.style.display === 'none' || moreText.style.display === '') {
+        moreText.style.display = 'inline';
+        btn.textContent = 'Read less';
+    } else {
+        moreText.style.display = 'none';
+        btn.textContent = 'Read more';
+    }
+};
+
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        const cardBody = this.closest('.card-body');
+        toggleReadMore(this, cardBody);
+    });
+});
+
+
+
+// function myFunction() {
+//     var dots = document.getElementById("dots");
+//     var moreText = document.getElementById("more");
+//     var btnText = document.getElementById("myBtn");
+  
+//     if (dots.style.display === "none") {
+//       dots.style.display = "inline";
+//       btnText.innerHTML = "Read more"; 
+//       moreText.style.display = "none";
+//     } else {
+//       dots.style.display = "none";
+//       btnText.innerHTML = "Read less"; 
+//       moreText.style.display = "inline";
+//     }
+//   }
+
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
