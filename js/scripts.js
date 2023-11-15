@@ -14,23 +14,39 @@
 
 
 // JavaScript function for "Read more/less" functionality
-const toggleReadMore = (btn, content) => {
-    const moreText = content.querySelector('.more');
-    if (moreText.style.display === 'none' || moreText.style.display === '') {
-        moreText.style.display = 'inline';
-        btn.textContent = 'Read less';
-    } else {
-        moreText.style.display = 'none';
-        btn.textContent = 'Read more';
-    }
-};
 
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', function () {
-        const cardBody = this.closest('.card-body');
-        toggleReadMore(this, cardBody);
+    const toggleReadMore = (btn, content) => {
+        const moreText = content.querySelector('.more');
+        if (moreText.style.display === 'none' || moreText.style.display === '') {
+            // Hide other expanded content before showing this one
+            document.querySelectorAll('.more').forEach(text => {
+                if (text !== moreText) {
+                    text.style.display = 'none';
+                }
+            });
+            // Change other button text to "Read more"
+            document.querySelectorAll('.read-more-btn').forEach(otherButton => {
+                if (otherButton !== btn) {
+                    otherButton.textContent = 'Read more';
+                }
+            });
+
+            moreText.style.display = 'inline';
+            btn.textContent = 'Read less';
+        } else {
+            moreText.style.display = 'none';
+            btn.textContent = 'Read more';
+        }
+    };
+
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const cardBody = this.closest('.card-body');
+            toggleReadMore(this, cardBody);
+        });
     });
-});
+
+
 
 
 
