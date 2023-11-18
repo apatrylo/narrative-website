@@ -11,19 +11,27 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-/* Read more */
-
-.more-content {
-  display: none;
+/* Card Animation */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Styling for the "Read more" link */
-.read-more {
-  color: blue;
-  cursor: pointer;
+.card-link:hover .card {
+  transform: scale(1.02);
 }
 
-/* Read more END */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Card Animation  END*/
+
 
 
 /* CSS for Medium breakpoint and larger screens */
@@ -331,11 +339,11 @@ sup {
 }
 
 a {
-  color: #f4623a;
+  color: #7D9672;
   text-decoration: underline;
 }
 a:hover {
-  color: #c34e2e;
+  color: #7D9672;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3860,7 +3868,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #f4623a;
+  color: #7D9672;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3870,7 +3878,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #c34e2e;
+  color: #7D9672 !important;
 }
 .nav-link.disabled {
   color: #6c757d;

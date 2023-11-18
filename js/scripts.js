@@ -12,6 +12,13 @@
 
 
 
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default behavior of anchor tag
+        const cardBody = this.closest('.card');
+        cardBody.classList.toggle('show-more-content'); // Toggle class to show/hide content
+    });
+});
 
 // JavaScript function for "Read more/less" functionality
 
