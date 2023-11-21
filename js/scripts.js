@@ -8,6 +8,24 @@
 // 
 
 
+
+
+
+//logo
+document.addEventListener('DOMContentLoaded', function() {
+    const logoContainer = document.querySelector('.logo-container');
+    const defaultImageSrc = 'assets/img/nav-bar-logo-main.svg';
+    const hoverImageSrc = 'assets/img/nav-bar-logo-hover.svg';
+
+    logoContainer.addEventListener('mouseover', function() {
+        document.querySelector('.logo-img').src = hoverImageSrc;
+    });
+
+    logoContainer.addEventListener('mouseout', function() {
+        document.querySelector('.logo-img').src = defaultImageSrc;
+    });
+}); 
+
 //Read more script
 
 
