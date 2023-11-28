@@ -11279,8 +11279,12 @@ hr.divider-light {
 }
 @media (min-width: 992px) {
   #mainNav {
-    box-shadow: none;
-    background-color: transparent;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.15);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.5px);
+-webkit-backdrop-filter: blur(1.5px);
+border: 1px solid rgba(255, 255, 255, 0.29);
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
