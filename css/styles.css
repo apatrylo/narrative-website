@@ -91,7 +91,7 @@
   padding-bottom: 56.25%; /* Aspect ratio 16:9 */
   position: relative;
   height: 0;
-  border-radius: calc(0.75rem - 1px);
+  border-radius: 0.75rem;;
 }
 
 .map-responsive iframe {
@@ -723,6 +723,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-radius: 0.25rem;;
 }
 
 .img-thumbnail {
