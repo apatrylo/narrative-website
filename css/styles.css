@@ -723,7 +723,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  border-radius: 0.25rem;;
+  border-radius: 0.25rem;
 }
 
 .img-thumbnail {
@@ -3145,6 +3145,47 @@ textarea.form-control-lg {
 } */
 
 
+.btn-dark {
+  color: #F1F2EE !important; 
+  border-color: #F1F2EE;
+}
+
+.btn-dark:hover {
+  width: auto ;
+  color: #F1F2EF;
+  background-color: #7D9672;
+  border-color: #7D9672;
+}
+
+.btn-dark:focus{
+  color: #F1F2EE;
+  box-shadow: 0 5px 15px #7D9672;
+  background-color: #F1F2EF;
+  /* border-color: #7D9672; */
+}
+
+.btn-dark:active{
+  color: #F1F2EF;
+  border-color: #7D9672;
+}
+.btn-check:focus + .btn-dark, .btn-dark:focus {
+  border-color: #D8D5CF !important;
+  color: #000;
+}
+.btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
+  color: #D8D5CF;
+  background-color: #7D9672 !important;
+  border-color: #7D9672 !important;
+}
+
+.btn-dark:disabled, .btn-dark.disabled {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+/* btn dark */
+
 .btn-light {
   color: #000;
   border-color: #D8D5CF;
@@ -3183,35 +3224,6 @@ textarea.form-control-lg {
   border-color: #f8f9fa;
 }
 
-.btn-dark {
-  color: #fff;
-  background-color: #212529;
-  border-color: #212529;
-}
-.btn-dark:hover {
-  color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
-}
-.btn-check:focus + .btn-dark, .btn-dark:focus {
-  color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
-  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-}
-.btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
-  color: #fff;
-  background-color: #1a1e21;
-  border-color: #191c1f;
-}
-.btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-}
-.btn-dark:disabled, .btn-dark.disabled {
-  color: #fff;
-  background-color: #212529;
-  border-color: #212529;
-}
 
 .btn-outline-primary {
   color: #f4623a;
