@@ -12,6 +12,44 @@
  */
 
 
+/* Quote */
+
+.otro-blockquote{
+  width:100%;
+  margin:25px auto;
+  font-family: 'Nunito', sans-serif;
+  color: #0C0D09;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:4px solid #7D9672;
+  line-height:1.6;
+  position: relative;
+  background:#F1F2EE;
+}
+
+.otro-blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#7D9672;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.otro-blockquote::after{
+  content: '';
+}
+
+.otro-blockquote span{
+  display:block;
+  color:#0C0D09;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+/* Quote END  */
+/* Source code: https://codepen.io/jimmycow/pen/LmjVaz " */
 
  .instagram-icon {
   display: inline-flex;
