@@ -17,6 +17,24 @@
 
 
 
+.video-container {
+  border-radius: 0.25rem;
+  position: relative;
+  width: 100%; /* Set the width of the container */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height = width * 9/16) */
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the iframe fill its container width */
+  height: 100%; /* Make the iframe fill its container height */
+}
+
+
+
 /*Portfolio styling from Freelancer template*/
 
 .portfolio .portfolio-item {
