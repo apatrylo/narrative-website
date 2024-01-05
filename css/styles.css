@@ -11364,7 +11364,8 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
 }
 
 .text-white-75 {
