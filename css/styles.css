@@ -29,6 +29,7 @@
  
  /* Cards */
  .postcard {
+  max-height: 350px;
    flex-wrap: wrap;
    display: flex;
    
@@ -200,7 +201,7 @@
        
        top: -20%;
        height: 130%;
-       width: 50px;
+       width: 55px;
      }
    
    .postcard.dark {
