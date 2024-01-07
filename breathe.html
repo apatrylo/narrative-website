@@ -43,70 +43,39 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
-          <a class="navbar-brand px-5" href="index.html">
-            <div class="logo-container">
-              <img class="logo-img" height="50" width="140" src="assets/img/nav-bar-logo-main.svg" alt="">
+            <a class="navbar-brand px-5" href="index.html">
+                <div class="logo-container">
+                    <img class="logo-img" height="50" width="140" src="assets/img/nav-bar-logo-main.svg" alt="">
+                </div>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="contemplate.html">Contemplate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="breathe.html">Breathe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stretch.html">Stretch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wellness.html">Wellness</a></li>
+                </ul>
             </div>
-          </a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0">
-              <li class="nav-item"><a class="nav-link" href="contemplate.html">Contemplate</a></li>
-              <li class="nav-item"><a class="nav-link" href="breathe.html">Breathe</a></li>
-              <li class="nav-item"><a class="nav-link" href="stretch.html">Stretch</a></li>
-              <li class="nav-item"><a class="nav-link" href="wellness.html">Wellness</a></li>
-            </ul>
-          </div>
         </div>
-      </nav>
-      <!-- Navigation END-->
+    </nav>
+    <!-- Navigation END-->
 
-    <!--About-->
-    <section class="p-5 mt-5">
-        <div class="container mt-4">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-12 col-lg-6 text-center">
-                    <img src="assets/img/Breathe/shore_breathing.jpg" class="img-fluid"
-                        alt="Middle aged man meditating on the coast. Holding hands in the prayer position"
-                        loading="lazy">
-                </div>
-                <div class="col-md-12 col-lg-6 p-5">
-                    <h3> Connection Between Pranayama and Chakra Breathing</h3>
-                    <p class="lead">
-                        <!-- Ji, B. (2019) What is Chakra Breathing and How to Practice?, Mantra Yoga & Meditation School. Available
-                        at: https://mantrayogameditation.org/what-is-chakra-breathing-and-how-to-practice/. -->
-                        Various techniques in yoga focus on regulating breath, known as pranayama. Chakra breathing, a
-                        powerful meditation
-                        method that heightens awareness of the body's seven chakras, is one such technique within the
-                        realm of pranayama.
-                    </p>
-                    <p>
-                        Before
-                        commencing chakra breathing, it is crucial to establish mindfulness and attention towards these
-                        energy centers, which
-                        aligns with the broader practice of pranayama in yoga. Find out more about 7 Chakras and what
-                        energy flows they corespond to in the section below.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--About END-->
 
     <!-- Charka Slider -->
-    <section class="pb-5 p-3">
+    <section class="page-section mt-5 pb-5 p-3">
         <!-- Swiper created using #Effect cards snippet from Swiper js library (2023) Codesandbox.io. 
-            Available at: https://codesandbox.io/p/sandbox/t22lp2?file=%2Findex.html%3A128%2C2-131%2C8 
-            (Accessed: 11 December 2023).-->
+        Available at: https://codesandbox.io/p/sandbox/t22lp2?file=%2Findex.html%3A128%2C2-131%2C8 
+        (Accessed: 11 December 2023).-->
         <!-- Images generated with Adobe Firefly -->
-        <div class="container col-lg-3 col-md-5">
-            <div class="container px-md-4 px-lg-5 mb-5">
+        <div class="container col-lg-4 col-md-6 p-5">
+            <div class="container px-md-4 px-lg-5 mb-5 animate__animated animate__fadeInUp">
                 <h2 class="text-center mt-0">Chakras</h2>
                 <hr class="divider" />
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center animate__animated animate__fadeInUp">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide card card-link col-md-4 mb-4"><a id="sahasrara"
@@ -122,10 +91,10 @@
                                     </p>
                                 </div>
                             </a></div>
-                        <div class="swiper-slide card card-link col-md-4 mb-4"><a
+                        <div class="swiper-slide card card-link col-md-4 mb-4"><a id="ajna"
                                 href="https://insighttimer.com/laitattis/guided-meditations/third-eye-chakra-awakening-meditation"
                                 class="card-link" id="ajna">
-                                <img class="card-img-top card-img-bottom pb-2 pt-2 px-2" 
+                                <img class="card-img-top card-img-bottom pb-2 pt-2 px-2"
                                     src="assets/img/Breathe/eye.jpg" alt="Third Eye Chakra">
                                 <div class="card-body">
                                     <h5 class="card-title">Third Eye Chakra</h5>
@@ -187,7 +156,7 @@
                                     </p>
                                 </div>
                             </a></div>
-                        <div class="swiper-slide card card-link col-md-4 mb-4"><a
+                        <div class="swiper-slide card card-link col-md-4 mb-4"><a id="muladhara"
                                 href="https://insighttimer.com/laitattis/guided-meditations/root-chakra-meditation-for-grounding-and-stability"
                                 class="card-link">
                                 <img class="card-img-top card-img-bottom pb-2 pt-2 px-2"
@@ -206,6 +175,39 @@
         </div>
     </section>
     <!-- Charka Slider END -->
+    <!--About-->
+    <section class="p-5 mt-5">
+        <div class="container mt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-12 col-lg-6 text-center">
+                    <img src="assets/img/Breathe/shore_breathing.jpg" class="img-fluid"
+                        alt="Middle aged man meditating on the coast. Holding hands in the prayer position"
+                        loading="lazy">
+                </div>
+                <div class="col-md-12 col-lg-6 p-5">
+                    <h3> Connection Between Pranayama and Chakra Breathing</h3>
+                    <p class="lead">
+                        <!-- Ji, B. (2019) What is Chakra Breathing and How to Practice?, Mantra Yoga & Meditation School. Available
+                        at: https://mantrayogameditation.org/what-is-chakra-breathing-and-how-to-practice/. -->
+                        Various techniques in yoga focus on regulating breath, known as pranayama. Chakra breathing, a
+                        powerful meditation
+                        method that heightens awareness of the body's seven chakras, is one such technique within the
+                        realm of pranayama.
+                    </p>
+                    <p>
+                        Before
+                        commencing chakra breathing, it is crucial to establish mindfulness and attention towards these
+                        energy centers, which
+                        aligns with the broader practice of pranayama in yoga. Find out more about 7 Chakras and what
+                        energy flows they corespond to in the section below.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About END-->
+
+
 
 
 
