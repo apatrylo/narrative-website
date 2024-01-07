@@ -11,7 +11,54 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- 
+
+
+ /* glow animation by wojtek - https://freefrontend.com/css-glow-effects/
+ March 31, 2020  */
+ .box {
+  background: hsl(0, 0%, 100%);
+  padding: 20px 24px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    transform: scale(1) translateZ(20);
+    filter: blur(30px);
+    background: linear-gradient(
+      to left,
+      #679260,
+      #7D9672,
+      #B1CCBD,
+      #7EBD99,
+      #99C7AE,
+      #B1CCBD,
+      #679260,
+      #7EBD99,
+      #9ebc91
+    );
+    background-size: 300% 300%;
+    animation: animateGlow 5s linear infinite;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
  
  /* This pen */
  
