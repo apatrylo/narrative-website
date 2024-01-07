@@ -16,11 +16,10 @@
  /* glow animation by wojtek - https://freefrontend.com/css-glow-effects/
  March 31, 2020  */
  .box {
-  background: hsl(0, 0%, 100%);
   padding: 20px 24px;
   position: relative;
   border-radius: 8px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.03);
 
   &::after {
     position: absolute;
