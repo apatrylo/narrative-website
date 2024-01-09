@@ -103,7 +103,7 @@
    
    h1,	.h1 {
      margin-bottom: 0.5rem;
-     font-weight: 500;
+     font-weight: 600;
      line-height: 1.2;
    }
    
@@ -1244,6 +1244,7 @@ h6, .h6 {
 }
 
 p {
+  color: #0C0D09;
   font-family: 'Nunito', sans-serif;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -4158,7 +4159,7 @@ textarea.form-control-lg {
 /* btn dark */
 
 .btn-light {
-  color: #000;
+  color: #0C0D09;
   border-color: #D8D5CF;
 }
 .btn-light:hover {
@@ -8694,9 +8695,8 @@ background-color: rgba(125, 150, 114, 0.1) !important;
 }
 
 .text-muted {
-  font-family:'Poppins', sans-serif;
-  --bs-text-opacity: 2;
-  color: #6E7364!important;
+  font-family:'Nunito', sans-serif;
+  color: #0C0D09;
 }
 
 .text-black-50 {
